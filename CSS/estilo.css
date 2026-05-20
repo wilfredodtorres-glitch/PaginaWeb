@@ -1,0 +1,87 @@
+nav [type="submit"]{
+    display: block;
+    margin-top: 10px;
+    color: rgb(50, 48, 48);
+    font-family: Copperplate,serif;
+
+}
+h1 {
+    color: rgb(7, 2, 105); 
+    font-size: 50px; 
+    font-family:Cooperplate,serif;
+    text-align: center;
+}
+
+body {
+    background-image: url('../fondo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.contenedor {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  width: 60%;       
+  margin: 0 auto;    
+  box-sizing: border-box;
+}
+
+.grupo {
+  display: flex;
+  flex-direction: column;
+  margin-right: -20px;
+}
+
+.grupo-mensaje {
+  grid-column: span 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.grupo-mensaje textarea {
+  height: 150px;
+  width: 100%;
+
+}
+input[type="submit"] {
+  margin: 20px auto;
+  display: block;
+  padding: 10px 20px;
+  font-size: 10px;
+}
+.servicios-h2 {
+    text-align: center;
+    font-family: papyrus,serif;
+    color: rgb(6, 99, 23);
+
+}
+.servicios p {
+    font-family: papyrus,serif;
+    color: rgb(77, 99, 30);
+}
+.footer-pagos p {
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.pagos-logos {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  background-color: white;
+  padding: 8px 15px;
+  border-radius: 6px;
+ 
+}
+
+.pagos-logos span {
+  color: #333;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+
+
