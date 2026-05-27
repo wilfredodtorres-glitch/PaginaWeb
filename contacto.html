@@ -13,40 +13,37 @@
 <script src="/PaginaWeb/menu.js"></script>
 <body>
   <h1>Contacto</h1>
-<Form class="contacto">
-  <fieldset>
-    <legend>Si deseas contactarme, por favor llena el siguiente formulario:</legend>
-    <div class="contenedor">
-        <div class="grupo">
-            <label>Nombre</label>
-            <input type="text" placeholder="Tu Nombre"> 
-    </div> 
+ <form class="formulario">
+                <fieldset>
+                    <legend>Contactános llenando todos los campos</legend>
 
-        <div class="grupo">
-            <label>Email</label>
-            <input type="text" placeholder="Tu Email">
-    </div>
+                    <div class="contenedor-campos">
+                        <div class="campo">
+                            <label>Nombre</label>
+                            <input class="input-text" type="text" placeholder="Tu Nombre">
+                        </div>
 
-        <div class="grupo">
-            <label>Telefono</label>
-            <input type="text" placeholder="Tu Telefono">
-    </div>
+                        <div class="campo">
+                            <label>Teléfono</label>
+                            <input class="input-text" type="tel" placeholder="Tu Teléfono">
+                        </div>
 
-        <div class="grupo">
-            <label>Dirección</label>
-            <input type="text" placeholder="Tu Dirección">
-    </div>
+                        <div class="campo">
+                            <label>Correo</label>
+                            <input class="input-text" type="email" placeholder="Tu Email">
+                        </div>
+                
+                        <div class="campo">
+                            <label>Mensaje</label>
+                            <textarea class="input-text"></textarea>
+                        </div>
+                    </div> <!-- .contenedor-campos -->
 
-        <div class="grupo-mensaje">
-            <label>Mensaje</label>
-            <textarea></textarea>
-   
-    </div>  
-    </div>
-        <div class="bottom">
-        <input type="submit" value="Enviar">
-    </div>          
-    </fieldset>
-</Form>
+                    <div class="alinear-derecha flex">
+                        <input class="boton w-sm-100" type="submit" value="Enviar">
+                    </div>
+                </fieldset>
+            </form>
+        </section>
 </body>
 </html>
