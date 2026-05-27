@@ -5,47 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wilfredo Web</title>
     <link rel="stylesheet" href="CSS/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    
 </head>
 <body>
-<header>
-    <h1>Bienvenido a mi sitio web</h1>
-    <nav>
-        <a href="SobreMi.html"><svg xmlns="http://www.w3.org/2000/svg" height="20" width="30" viewBox="0 0 512 512"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
-            <path d="M399 384.2C376.9 345.8 335.4 320 288 320l-64 0c-47.4 0-88.9 25.8-111 64.2 35.2 39.2 86.2 63.8 143 63.8s107.8-24.7 143-63.8zM0 256a256 256 0 1 1 512 0 256 256 0 1 1 -512 0zm256 16a72 72 0 1 0 0-144 72 72 0 1 0 0 144z"/>
-        </svg>Sobre mí</a>
-        <a href="clientes.html">
-            <svg xmlns="http://www.w3.org/2000/svg" height="20" width="30" viewBox="0 0 384 512"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
-            <path d="M248 24a56 56 0 1 0 -112 0 56 56 0 1 0 112 0zm24 212.7l46.3 62.4c10.5 14.2 30.6 17.2 44.8 6.6s17.2-30.6 6.6-44.8l-70.5-95C274 132 234.3 112 192 112s-82 20-107.2 53.9l-70.5 95c-10.5 14.2-7.6 34.2 6.6 44.8s34.2 7.6 44.8-6.6L112 236.7 112 512c0 17.7 14.3 32 32 32s32-14.3 32-32l0-160c0-8.8 7.2-16 16-16s16 7.2 16 16l0 160c0 17.7 14.3 32 32 32s32-14.3 32-32l0-275.3z">
-        </svg>Clientes</a>  
-        <a href="contacto.html">
-            <svg xmlns="http://www.w3.org/2000/svg" height="20" width="30" viewBox="0 0 512 512"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
-            <path d="M96 0C60.7 0 32 28.7 32 64l0 384c0 35.3 28.7 64 64 64l288 0c35.3 0 64-28.7 64-64l0-384c0-35.3-28.7-64-64-64L96 0zM208 288l64 0c44.2 0 80 35.8 80 80 0 8.8-7.2 16-16 16l-192 0c-8.8 0-16-7.2-16-16 0-44.2 35.8-80 80-80zm-24-96a56 56 0 1 1 112 0 56 56 0 1 1 -112 0z"/>
-            </svg>Contacto</a>
+  <header>
+    <h1 class="titulo">Wiltorre <span>Chef</span></h1>
+  </header>
 
-    
-    </nav>
-</header>
-<section class="servicios">
-  <h2 class="servicios-h2">Mis Servicios</h2>
-  <p>Mantenimiento de Computadoras</p>
-  <p>Reparación de Celulares</p>
-  <p>Clases de aplicaciones del paquete de Microsoft 365</p>
-</section>
-<footer>
-  <div class="footer-bottom">
-    <div class="footer-pagos">
-      <p>Formas de Pago:</p>
-      <div class="pagos-logos">
-        <span>VISA</span>
-        <span>Mastercard</span>
-        <span>American Express</span>
-        <span>Tasa Cero BAC</span>
-        <span>Minicuotas BAC</span>
-        <span>emma</span>
-        <span>Credix</span>
+<div id="menu"></div>
+<script src="/PaginaWeb/menu.js"></script>
+
+  <section>
+    <div class="webcomedor">
+      <div class="contenido-webcomedor">
+        <h2>Chef<span>Gourmet</span></h2>
+        <div class="ubicacion">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="88" height="88" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFC107" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z"/>
+            <circle cx="12" cy="11" r="3" />
+            <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 0 1 -2.827 0l-4.244-4.243a8 8 0 1 1 11.314 0z" />
+          </svg>
+          <p>Alajuela, Costa Rica</p>
+        </div>
+        <a class="boton" href="#">Contactar</a>
       </div>
     </div>
-  </div>
-</footer>
+  </section>
+
+  <main class="contenedor sombra">
+    <h2>Mis Servicios</h2>
+    <div class="servicios">
+      <section class="servicio">
+        <h3>Desayunos</h3>
+      </section>
+      <section class="servicio">
+        <h3>Almuerzos</h3>
+      </section>
+      <section class="servicio">
+        <h3>Cenas</h3>
+      </section>
+      <section class="servicio">
+        <h3>Refacciones</h3>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Wilfredo Web. Todos los derechos reservados.</p>
+  </footer>
 </body>
 </html>  
