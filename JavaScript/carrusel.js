@@ -28,7 +28,7 @@ document.getElementById('carrusel').innerHTML = `
           </svg>
           <p>Alajuela, Costa Rica</p>
         </div>
-        <a class="boton" href="#">Contactar</a>
+        <a class="boton" href="contacto.html">Contactar</a>
       </div>
     </div>
 </section>
