@@ -1,45 +1,72 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wilfredo Web</title>
-    <link rel="stylesheet" href="css/estilo.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;1,300&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet" />
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wilfredo Web</title>
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;1,300&family=DM+Mono:wght@300;400&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
+
 <body>
   <header>
     <h1 class="titulo">Wiltorre <span>Chef</span></h1>
   </header>
 
-<div id="menu"></div>
-<script src="menu.js"></script>
+  <div id="menu"></div>
+  <script src="javascript/menu.js"></script>
 
-<div id="carrusel"></div>
-<script src="carrusel.js"></script>
+  <div id="carrusel"></div>
+  <script src="javascript/carrusel.js"></script>
 
-  <main class="contenedor sombra">
-    <h2>Mis Servicios</h2>
-    <div class="servicios">
-      <section class="servicio">
-        <h3>Desayunos</h3>
-      </section>
-      <section class="servicio">
-        <h3>Almuerzos</h3>
-      </section>
-      <section class="servicio">
-        <h3>Cenas</h3>
-      </section>
-      <section class="servicio">
-        <h3>Refacciones</h3>
-      </section>
+  <p class="texto-elegante">Bienvenid@s</p>
+
+    <div class="somos">
+      <div class="somos-imagenes">
+        <img src="imagenes/imagenprincipal1.jpg" alt="Wiltorre Chef" class="img-arriba">
+        <img src="imagenes/imagenprincipal2.jpg" alt="Wiltorre Chef 2" class="img-abajo">
+      </div>
+      <div class="somos-texto">
+        <h2>Wiltorre <span>Chef</span></h2>
+        <p>Somos un restaurante dedicado a ofrecer una experiencia culinaria excepcional, combinando sabores auténticos
+          con un ambiente acogedor. Nuestro compromiso es brindar platos deliciosos elaborados con ingredientes frescos
+          y
+          de alta calidad, acompañados de un servicio atento y personalizado. En Wiltorre Chef, cada comida es una
+          celebración de la gastronomía, diseñada para satisfacer los paladares más exigentes y crear momentos
+          memorables
+          para nuestros clientes.</p>
+        <a class="boton boton-naranja" href="SobreMi.html">Conozca más</a>
+      </div>
     </div>
-  </main>
 
-  <footer>
-    <p>&copy; 2026 Wilfredo Web. Todos los derechos reservados.</p>
-  </footer>
+
+    <section class="seccion-video">
+      <div class="contenedor-video">
+        <iframe
+          src="https://www.youtube.com/embed/q4DkWn-2m1c?autoplay=1&mute=1&loop=1&playlist=q4DkWn-2m1c&controls=0&modestbranding=1&showinfo=0&rel=0&vq=hd1080&disablekb=1&fs=0&iv_load_policy=3"
+          title="Wiltorre Chef - Video"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+        <div class="video-overlay">
+          <div class="video-titulo">
+            <span class="vt-linea1">Nuestra</span>
+            <span class="vt-linea2">Experiencia</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2026 Wilfredo Web. Todos los derechos reservados.</p>
+    </footer>
 </body>
-</html>  
+
+</html>

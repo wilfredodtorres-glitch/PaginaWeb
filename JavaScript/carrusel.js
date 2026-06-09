@@ -2,16 +2,19 @@ document.getElementById('carrusel').innerHTML = `
 <section class="carrusel-seccion">
   <div class="carrusel">
     <div class="carrusel-item">
-      <img src="imagen1.jpg" alt="Desayuno especial">
+      <img src="imagenes/imagen1.jpg" alt="Desayuno especial">
     </div>
     <div class="carrusel-item">
-      <img src="imagen2.jpg" alt="Almuerzo del día">
+      <img src="imagenes/imagen2.jpg" alt="Almuerzo del día">
     </div>
     <div class="carrusel-item">
-      <img src="imagen3.jpg" alt="Cena especial">
+      <img src="imagenes/imagen3.jpg" alt="Cena especial">
     </div>
     <div class="carrusel-item">
-      <img src="imagen4.jpg" alt="Refacciones">
+      <img src="imagenes/imagen4.jpg" alt="Refacciones">
+    </div>
+    <div class="carrusel-item">
+      <img src="imagenes/imagen1.jpg" alt="Desayuno especial">
     </div>
   </div>
 <div class="contenido-carrusel">
@@ -33,14 +36,37 @@ document.getElementById('carrusel').innerHTML = `
 
 const carrusel = document.querySelector('.carrusel');
 const items = document.querySelectorAll('.carrusel-item');
+
+const totalReales = items.length - 1; // la última es la copia
+
 let actual = 0;
-let direccion = 1;
 
 setInterval(() => {
-  actual += direccion;
 
-  if (actual === items.length - 1) direccion = -1;
-  if (actual === 0) direccion = 1;
+    actual++;
 
-  carrusel.scrollTo({ left: carrusel.offsetWidth * actual, behavior: 'smooth' });
+    carrusel.scrollTo({
+        left: carrusel.offsetWidth * actual,
+        behavior: 'smooth'
+    });
+
+    // Cuando llega a la copia de la primera imagen
+    if (actual === totalReales) {
+
+        setTimeout(() => {
+
+            // Salto instantáneo a la primera real
+            carrusel.style.scrollBehavior = 'auto';
+
+            carrusel.scrollLeft = 0;
+
+            actual = 0;
+
+            requestAnimationFrame(() => {
+                carrusel.style.scrollBehavior = 'smooth';
+            });
+
+        }, 600); // debe ser menor que el intervalo
+    }
+
 }, 2000);
