@@ -18,7 +18,6 @@ document.getElementById('carrusel').innerHTML = `
     </div>
   </div>
 <div class="contenido-carrusel">
-  <div class="contenido-carrusel">
         <h2>Chef<span>Gourmet</span></h2>
         <div class="ubicacion">
           <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="88" height="88" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFC107" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -29,7 +28,6 @@ document.getElementById('carrusel').innerHTML = `
           <p>Alajuela, Costa Rica</p>
         </div>
         <a class="boton" href="contacto.html">Contactar</a>
-      </div>
     </div>
 </section>
 `;
