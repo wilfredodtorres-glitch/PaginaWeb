@@ -121,6 +121,15 @@ h2 {
     letter-spacing: -0.015em;
 }
 
+@media (max-width: 768px) {
+    h1 {
+        font-size: 36px;
+    }
+    h2 {
+        font-size: 26px;
+    }
+}
+
 h3 {
     font-size: 20px;
     font-weight: 400;
@@ -252,10 +261,38 @@ h4 {
     flex-direction: column;
 }
 
+.menu-movil-header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem;
+}
+
+.boton-menu-movil {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+.enlaces-menu {
+    display: none;
+    flex-direction: column;
+}
+
+.enlaces-menu.mostrar {
+    display: flex;
+}
+
 @media (min-width: 768px) {
-    .navegacion-principal {
+    .menu-movil-header {
+        display: none;
+    }
+    
+    .enlaces-menu {
+        display: flex;
         flex-direction: row;
         justify-content: space-between;
+        width: 100%;
     }
 }
 
@@ -293,9 +330,15 @@ h4 {
 
 .galeria {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
     gap: 1rem;
     align-items: center;
+}
+
+@media (min-width: 768px) {
+    .galeria {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 .galeria img {
@@ -457,6 +500,12 @@ h4 {
     text-align: center;
 }
 
+@media (max-width: 768px) {
+    .contenido-carrusel h2 {
+        font-size: 3.5rem;
+    }
+}
+
 .contenido-carrusel h2 span {
     font-style: italic;
     color: var(--color-amarillo);
@@ -553,6 +602,12 @@ h4 {
     color: var(--color-anaranjado);
 }
 
+@media (max-width: 768px) {
+    .texto-elegante {
+        font-size: 30px;
+    }
+}
+
 /* ── Sección Video ── */
 .seccion-video {
     padding: 0;
@@ -637,6 +692,18 @@ h4 {
     letter-spacing: 12px;
     align-self: flex-end;
     /* Alinear a la derecha del contenedor */
+}
+
+@media (max-width: 768px) {
+    .vt-linea1 {
+        font-size: 40px;
+        letter-spacing: 4px;
+        margin-bottom: -8px;
+    }
+    .vt-linea2 {
+        font-size: 55px;
+        letter-spacing: 6px;
+    }
 }
 
 /* ── Mapa ── */
